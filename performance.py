@@ -41,7 +41,7 @@ def fsi(cover_path, stego_path):
     size_stego = os.path.getsize(stego_path)
     print(f"Size cover: {size_cover}")
     print(f"Size stego: {size_stego}")
-    fsi_res = ((size_stego - size_cover) / size_cover) 
+    fsi_res = ((size_stego - size_cover)) 
     return np.float64(fsi_res)
 
 def psnr(cover_path, stego_path):

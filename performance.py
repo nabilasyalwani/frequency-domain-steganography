@@ -63,7 +63,7 @@ def psnr(cover_path, stego_path):
     if cover_arr.shape != stego_arr.shape:
         raise ValueError("Ukuran cover dan stego image tidak sama!")
 
-    mse = np.mean((cover_arr - stego_arr) ** 2)
+    mse = np.mean(np.abs(cover_arr - stego_arr) ** 2)
 
     if mse == 0:
         return float('inf')  # Gambar identik, PSNR tak terhingga

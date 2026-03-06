@@ -59,7 +59,6 @@ def zigzag(input):
 				h = h + 1
 				i = i + 1
 
-
 		else:                                    # going down
 
 			if ((v == vmax -1) and (h <= hmax -1)):       # if we got to the last line
@@ -85,9 +84,6 @@ def zigzag(input):
 				v = v + 1
 				h = h - 1
 				i = i + 1
-
-
-
 
 		if ((v == vmax-1) and (h == hmax-1)):          # bottom right element
 			#print(7)
@@ -158,7 +154,6 @@ def inverse_zigzag(input, vmax, hmax):
 				h = h + 1
 				i = i + 1
 
-
 		else:                                    # going down
 
 			if ((v == vmax -1) and (h <= hmax -1)):       # if we got to the last line
@@ -181,9 +176,6 @@ def inverse_zigzag(input, vmax, hmax):
 				v = v + 1
 				h = h - 1
 				i = i + 1
-
-
-
 
 		if ((v == vmax-1) and (h == hmax-1)):          # bottom right element
 			#print(7)

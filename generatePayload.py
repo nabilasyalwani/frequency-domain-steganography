@@ -29,6 +29,6 @@ def generate_lorem_bits_txt(filename, target_bits):
     print(f"Actual bits : {actual_bits}")
 
 if __name__ == "__main__":
-    for i in range (1, 16):
-        generate_lorem_bits_txt(f"payload/{i*100000}bits.txt", i * 100000)
+    for i in range (1, 100):
+        generate_lorem_bits_txt(f"payload/{1000 * i}bits.txt", i * 1000)
     # generate_lorem_bits_txt(f"payload/1bits.txt", 1)
